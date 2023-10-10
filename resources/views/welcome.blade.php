@@ -13,6 +13,14 @@
     <body>
         <h4>Listado de Etiquetas</h4>
         @forelse ($tags as $tag)
+        <tr>
+            <td>
+                {{$tag->id}}
+            </td>
+            <td>
+                {{$tag->name}}<br>
+            </td>
+        </tr>
             
         @empty
         <tr>
